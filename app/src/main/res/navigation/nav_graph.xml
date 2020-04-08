@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/homedest">
+
+    <fragment
+        android:id="@+id/homedest"
+        android:name="com.example.prototype.Fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homedest_to_timeTableFragment"
+            app:destination="@id/timeTableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeTableFragment"
+        android:name="com.example.prototype.Fragment.TimeTableFragment"
+        android:label="TimeTableFragment" />
+</navigation>
