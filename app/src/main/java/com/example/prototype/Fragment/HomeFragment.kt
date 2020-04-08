@@ -18,6 +18,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
@@ -31,4 +32,6 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.timeTableFragment,null)
         }
     }
+
+
 }
