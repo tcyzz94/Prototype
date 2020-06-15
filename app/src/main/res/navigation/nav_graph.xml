@@ -10,9 +10,32 @@
         <action
             android:id="@+id/action_homedest_to_timeTableFragment"
             app:destination="@id/timeTableFragment" />
+        <action
+            android:id="@+id/action_homedest_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
     </fragment>
     <fragment
         android:id="@+id/timeTableFragment"
         android:name="com.example.prototype.Fragment.TimeTableFragment"
-        android:label="TimeTableFragment" />
+        android:label="TimeTableFragment" >
+        <action
+            android:id="@+id/action_timeTableFragment_to_addReplacementFragment"
+            app:destination="@id/addReplacementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.example.prototype.Fragment.AddStudentFragment"
+        android:label="AddStudentFragment" >
+        <action
+            android:id="@+id/action_addStudentFragment_to_homedest"
+            app:popUpTo="@id/homedest" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReplacementFragment"
+        android:name="com.example.prototype.Fragment.AddReplacementFragment"
+        android:label="AddReplacementFragment" >
+        <action
+            android:id="@+id/action_addReplacementFragment_to_timeTableFragment"
+            app:popUpTo="@id/timeTableFragment" />
+    </fragment>
 </navigation>

@@ -31,6 +31,11 @@ class HomeFragment : Fragment() {
         ivTimeTable.setOnClickListener {
             findNavController().navigate(R.id.timeTableFragment,null)
         }
+
+        ivAddStudent.setOnClickListener {
+            findNavController().navigate(R.id.addStudentFragment,null)
+        }
+
     }
 
 
